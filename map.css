@@ -1,0 +1,253 @@
+* {
+    font-family: "Lexend Deca", sans-serif;
+}
+body {
+    max-width: 100%;
+    background-image: url('bubbles\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.menu-main {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .right-item {
+    float: right;
+  }
+  
+  .menu-main a {
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    padding: 0 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    color: black;
+    transition: 0.2s linear;
+  }
+  .menu-main a:hover {
+    font-size: 17px;
+    border-bottom: 3px solid rgb(66, 66, 66);
+  }
+  .top-menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    right: 0;
+  }
+
+.title {
+    /* display: flex;
+    justify-content: center; */
+    font-size: 50px;
+    font-weight: 300;
+}
+.elements-box {
+    /* width: 60%;
+    margin-left: 15%; */
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-container {
+    margin-right: 15px;
+    align-self: center;
+}
+
+  .container {
+    display: flex;
+    margin-left: 10%;
+    align-self: center;
+    flex-direction: column;
+  }
+  .slides-container {
+    width: 55%;
+    height: 300px;
+    display: flex;
+    /* align-self: center; */
+    overflow: scroll;
+    scroll-behavior: smooth;
+    list-style: none;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    opacity: 1;
+  }
+  
+.slider-img {
+    align-self: center;
+    margin: 2%;
+}
+.btn-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+    align-self: center;
+}
+.btn {
+    margin: 15px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+#btnLeft {
+    background-image: url('left.png');
+    background-size: cover;
+}
+#btnRight {
+    background-image: url('left.png');
+    background-size: cover;
+    transform: scaleX(-1);
+}
+
+  input[type=checkbox]:checked + .step {
+    text-decoration: line-through;
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+    background-color: #a6ef8a;
+    border: 2px solid #4ebe59;
+    margin: 2px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 10%;
+}
+.option-box {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 65%;
+    text-align: start;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    margin: 2px;
+    /* margin-top: -20px; */
+}
+.step {
+    font-size: 21px;
+    border-radius: 10px;
+    padding: 20px;
+    align-self: center;
+    width: 100%;
+    margin: 2px;
+    border-radius: 10px;
+    border: 3px solid #68686875;
+}
+.step:hover {
+    background-color: #acacac5c;
+}
+input {
+    height: 25px;
+    width: 25px;
+    align-self: center;
+    font-size: 23px;
+}
+.well-done {
+    font-size: 21px;
+}
+.pop-up-container {
+    opacity: 0;
+    margin-left: 10%;
+    transform: translateY(-100%);
+}
+.visible {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0);
+}
+.mapouter {
+    margin-top: 2%;
+}
+.header {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+@media all and (max-width: 500px) {
+    .menu-main {
+        justify-content: flex-start;
+    }
+    .menu-main a {
+        line-height: 50px;
+        padding: 0 10px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .title {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .slides-container {
+        width: 95%;
+        margin-left: 0;
+    }
+    .container {
+        margin-left: 2%;
+    }
+    .slides-container {
+        height: 200px;
+    }
+    .img-in-slider {
+        width: 100px;
+        height: 100px;
+    }
+    h3 {
+        font-size: 13px;
+    }
+    .tip-text {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .btn {
+        width: 70px;
+        height: 70px;
+    }
+    .option-box {
+        width: 95%;
+    }
+    .input-container {
+        margin-left: 2%;
+    }
+    .step {
+        font-size: 16px;
+        padding: 10px;
+    }
+    input[type=checkbox]:checked + .step {
+        padding: 10px;
+    }
+    .pop-up-container {
+        margin-left: 2%;
+    }
+    .well-done {
+        font-size: 17px;
+    }
+    .header {
+        margin-left: 2%;
+        margin-top: 0;
+    }
+}

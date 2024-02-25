@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-menu">
+        <ul class="menu-main">
+          <li class="right-item"><a href="index.html">HOME</a></li>
+          <li class="right-item"><a href="quiz.html">QUIZ</a></li>
+          <li class="right-item"><a href="recycle.html">GAME</a></li>
+          <li class="right-item"><a href="map.html">TAKE ACTION</a></li>
+        </ul>
+      </nav>
+
+        <div class="box">
+            <div class="game-rules">
+                <h1>Catch only recyclable items!</h1>
+                <p class="instruction">You earn 1 point if you catch recyclable items correctly. Use the arrows on your device to move the basket. Once you get 10 items wrong, you will lose the game.</p>
+            </div>
+    <div class="game">
+        <div class="score">
+            <h3 class="caught"></h3>
+            <h3 class="wrong"></h3>
+        </div>
+        <div class="items"></div>
+        <div class="loose-line"></div>
+        <div class="basket"></div>
+    </div>
+
+    <div id="btnbox">
+        <button id='btnLeft'></button>
+        <button id='btnRight'></button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
